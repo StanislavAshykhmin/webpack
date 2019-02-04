@@ -24,7 +24,7 @@ You can install the application using the following commands:
 
 sh
 git clone git@github.com:StanislavAshykhmin/webpack.git .
-cd parser
+cd webpack
 cp .env.example .env
 docker-compose up -d --build
 
