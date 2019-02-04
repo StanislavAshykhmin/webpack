@@ -1,0 +1,27 @@
+.content{
+  margin: 50px auto;
+}
+header {
+  padding:10px;
+  //background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnZTXjvJh-htko3eWnDG6cZidv5OX3PR066lkAIm4f_e2o2AsQ9A');
+  background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%);
+  background-size: cover;
+  height: 500px;
+}
+
+.site-heading{
+  margin: 25% auto;
+}
+
+a{
+  color: black;
+}
+
+.img-left{
+  float: left;
+  margin-right: 10px;
+}
+
+.subheading{
+  font-size: 20px;
+}
