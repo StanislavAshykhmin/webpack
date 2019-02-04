@@ -1,0 +1,5 @@
+version: '2'
+services:
+    webpack_web:
+        ports:
+            - "45012:80"
