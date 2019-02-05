@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('content.index');
 });
+
+Route::get('/record', function () {
+	return view('content.show');
+});

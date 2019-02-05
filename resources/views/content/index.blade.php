@@ -8,7 +8,7 @@
 		<div class="row">
 			<div class="box">
 				<div class="col-lg-12">
-					<h2 class="intro-text text-center"><a href="">Build a website
+					<h2 class="intro-text text-center"><a href="/record">Build a website
 						worth visiting</a>
 					</h2>
 					<img class="img-responsive img-border img-left" src="{{asset('img/intro-pic.jpg')}}" alt="">
@@ -24,7 +24,7 @@
 			<div class="box">
 				<div class="col-lg-12">
 					<hr>
-					<h2 class="intro-text text-center"><a href="">Build a website
+					<h2 class="intro-text text-center"><a href="/record">Build a website
 						worth visiting</a>
 					</h2>
 					<img class="img-responsive img-border img-left" src="{{asset('img/intro-pic.jpg')}}" alt="">
@@ -41,7 +41,7 @@
 				<div class="col-lg-12">
 					<hr>
 
-					<h2 class="intro-text text-center"><a href="">Build a website
+					<h2 class="intro-text text-center"><a href="/record">Build a website
 						worth visiting</a>
 					</h2>
 					<img class="img-responsive img-border img-left" src="{{asset('img/intro-pic.jpg')}}" alt="">
@@ -57,7 +57,7 @@
 				<div class="col-lg-12">
 					<hr>
 
-					<h2 class="intro-text text-center"><a href="">Build a website
+					<h2 class="intro-text text-center"><a href="/record">Build a website
 						worth visiting</a>
 					</h2>
 					<img class="img-responsive img-border img-left" src="{{asset('img/intro-pic.jpg')}}" alt="">
@@ -73,7 +73,7 @@
 				<div class="col-lg-12">
 					<hr>
 
-					<h2 class="intro-text text-center"><a href="">Build a website
+					<h2 class="intro-text text-center"><a href="/record">Build a website
 						worth visiting</a>
 					</h2>
 					<img class="img-responsive img-border img-left" src="{{asset('img/intro-pic.jpg')}}" alt="">
@@ -89,7 +89,7 @@
 				<div class="col-lg-12">
 					<hr>
 
-					<h2 class="intro-text text-center"><a href="">Build a website
+					<h2 class="intro-text text-center"><a href="/record">Build a website
 						worth visiting</a>
 					</h2>
 					<img class="img-responsive img-border img-left" src="{{asset('img/intro-pic.jpg')}}" alt="">

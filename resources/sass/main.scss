@@ -3,14 +3,19 @@
 }
 header {
   padding:10px;
-  //background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnZTXjvJh-htko3eWnDG6cZidv5OX3PR066lkAIm4f_e2o2AsQ9A');
-  background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%);
-  background-size: cover;
-  height: 500px;
+  background-color: white;
+  //background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%);
+}
+
+.img-header{
+  width: 300px;
+  position: absolute;
+  top: 180px;
+  right: 230px;
 }
 
 .site-heading{
-  margin: 25% auto;
+  margin: 5% auto 20%;
 }
 
 a{

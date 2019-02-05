@@ -7,7 +7,7 @@
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#">Link</a>
@@ -41,7 +41,8 @@
 				<div class="site-heading text-center">
 					<h1>Blog</h1>
 					<hr class="small">
-					<span class="subheading">Blog about everything!</span>
+					<span class="subheading">Blog about</span>
+					<img class="img-header" src="https://themuseumofeverything.files.wordpress.com/2013/04/cropped-everything.jpg" alt="">
 				</div>
 			</div>
 		</div>
