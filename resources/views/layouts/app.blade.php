@@ -12,7 +12,9 @@
 </head>
 <body>
 @include('layouts.header')
+@include('content.widget.clock')
 @yield('content')
+@include('content.widget.photo')
 @include('layouts.footer')
 @stack('scripts')
 </body>

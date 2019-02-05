@@ -7,6 +7,10 @@
 
 require('./bootstrap');
 require('./photo');
+require('./jquery-1.3.2.min');
+require('./jquery.jdigiclock');
+require('./masonry.pkgd.min');
+require('./masonry.pkgd');
 
 window.Vue = require('vue');
 
