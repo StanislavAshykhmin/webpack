@@ -47944,6 +47944,8 @@ module.exports = function(module) {
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./photo */ "./resources/js/photo.js");
+
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /**
  * The following block of code may be used to automatically register your
@@ -48095,21 +48097,88 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/photo.js":
+/*!*******************************!*\
+  !*** ./resources/js/photo.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(function () {
+  var sldr = $('.sldr'),
+      sldrContent = sldr.html(),
+      slideWidth = $('.sl_ctr').outerWidth(),
+      slideCount = $('.sldr img').length,
+      prv_b = $('.prv_b'),
+      nxt_b = $('.nxt_b'),
+      sldrInterval = 3300,
+      animateTime = 1000,
+      course = 1,
+      margin = -slideWidth;
+  $('.sldr img:last').clone().prependTo('.sldr');
+  $('.sldr img').eq(1).clone().appendTo('.sldr');
+  $('.sldr').css('margin-left', -slideWidth);
+
+  function nxt_bSlide() {
+    interval = window.setInterval(animate, sldrInterval);
+  }
+
+  function animate() {
+    if (margin == -slideCount * slideWidth - slideWidth) {
+      sldr.css({
+        'marginLeft': -slideWidth
+      });
+      margin = -slideWidth * 2;
+    } else if (margin == 0 && course == -1) {
+      sldr.css({
+        'marginLeft': -slideWidth * slideCount
+      });
+      margin = -slideWidth * slideCount + slideWidth;
+    } else {
+      margin = margin - slideWidth * course;
+    }
+
+    sldr.animate({
+      'marginLeft': margin
+    }, animateTime);
+  }
+
+  function sldrStop() {
+    window.clearInterval(interval);
+  }
+
+  prv_b.click(function () {
+    if (sldr.is(':animated')) {
+      return false;
+    }
+
+    var course2 = course;
+    course = -1;
+    animate();
+    course = course2;
+  });
+  nxt_b.click(function () {
+    if (sldr.is(':animated')) {
+      return false;
+    }
+
+    var course2 = course;
+    course = 1;
+    animate();
+    course = course2;
+  });
+  sldr.add(nxt_b).add(prv_b).hover(function () {
+    sldrStop();
+  }, nxt_bSlide);
+  nxt_bSlide();
+});
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
   \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "./resources/sass/main.scss":
-/*!**********************************!*\
-  !*** ./resources/sass/main.scss ***!
-  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -48129,16 +48198,15 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!********************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/style.scss ./resources/sass/main.scss ***!
-  \********************************************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/style.scss ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/user/projects/webpack/resources/js/app.js */"./resources/js/app.js");
 __webpack_require__(/*! /home/user/projects/webpack/resources/sass/app.scss */"./resources/sass/app.scss");
-__webpack_require__(/*! /home/user/projects/webpack/resources/sass/style.scss */"./resources/sass/style.scss");
-module.exports = __webpack_require__(/*! /home/user/projects/webpack/resources/sass/main.scss */"./resources/sass/main.scss");
+module.exports = __webpack_require__(/*! /home/user/projects/webpack/resources/sass/style.scss */"./resources/sass/style.scss");
 
 
 /***/ })
