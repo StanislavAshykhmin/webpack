@@ -1,0 +1,32 @@
+.sl_ctr{
+  position:relative;
+  width:450px;
+  height:300px;
+  overflow:hidden;
+  margin: 3% auto;
+}
+.sldr{
+  position:relative;
+  width:10000px;
+  height:300px;
+}
+.sldr img{
+  width:450px;
+  height:300px;
+  float:left;
+}
+.prv_b, .nxt_b{
+  position:absolute;
+  top:135px;
+  display:block;
+  width:35px;
+  height:35px;
+  cursor:pointer;
+}
+.prv_b:hover, .nxt_b:hover{opacity:.6;}
+.prv_b{
+  left:10px;
+}
+.nxt_b{
+  right:10px;
+}
